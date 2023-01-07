@@ -1,0 +1,120 @@
+body{
+    background-color: rgb(10, 2, 39);
+}
+.snowbox2{
+    display: flex;
+    position: absolute;
+    left: 50px;
+    animation-name: snowing;
+    animation-delay: 0s;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    z-index: 4;
+}
+.snowbox3{
+    display: flex;
+    position: absolute;
+    animation-name: snowing;
+    animation-delay: 2s;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.snowbox4{
+    display: flex;
+    position: absolute;
+    left: 50px;
+    animation-name: snowing;
+    animation-delay: 4s;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.snowbox5{
+    display: flex;
+    position: absolute;
+    animation-name: snowing;
+    animation-delay: 6s;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    z-index: 4;
+}
+.snowbox{
+    display: flex;
+    position: absolute;
+    left: 50px;
+    animation-name: snowing;
+    animation-delay: 8s;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.animation{
+    position: absolute;
+    bottom: 100px;
+    left: 10px;
+    width: 400px;
+    height: 200px;
+    animation-name: santamoving;
+    animation-delay: 1s;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    z-index: 3;
+}
+.animation img{
+    width: 100%;
+    height: 100%;
+}
+.house{
+    position: absolute;
+    bottom: 100px;
+    right: 0;
+    width: 300px;
+    height: 500px;
+    z-index: 2;
+}
+.house img{
+    width: 100%;
+    height: 100%;
+}
+.groundsnow{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    height: 140px;
+    width: 100%;
+    z-index: 1;
+}
+
+@keyframes santamoving {
+    from{
+        left: 10px;
+    }   
+    to{
+        
+        left: 850px
+    }
+    
+}
+
+@keyframes snowing {
+    0%{
+        top: 0;
+        opacity: 0;
+    }
+    90%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        top: 350px;
+        opacity: 0;
+    }
+}
